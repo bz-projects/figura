@@ -1,0 +1,94 @@
+/*
+Theme Name: Figura
+Theme URI: https://wordpress.org/themes/figura
+Author: Benjamin Zekavica
+Author URI: https://www.benjamin-zekavica.de
+Description: Figura is designed to be flexible for any website. Figura is a Block Theme with multiple predefined Templates for Quickstart with the Full-Site-Editor.
+Requires at least: 6.3
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v3
+License URI: https://www.gnu.org/licenses/gpl-3.0
+Text Domain: figura
+Tags: one-column, custom-colors, custom-menu, custom-logo, featured-images, full-site-editing, wide-blocks, blog
+*/
+
+/* WP Globals */
+
+.wp-site-blocks {
+    padding: 0;
+}
+
+:where(.wp-site-blocks) > * {
+    margin-block-start: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+input, textarea {
+    &:focus {
+        outline-color: var(--wp--preset--color--custom-primary-dark);
+    }
+}
+
+a { 
+    transition: color .3s ease-in-out;
+    
+    &:hover {
+        color: var(--wp--preset--color--custom-secondary-dark);
+    }
+}
+
+/* WP Menu */
+
+.wp-block-navigation {
+    .wp-block-navigation-item {
+
+        &.current-menu-item > a {
+            color: var(--wp--preset--color--custom-primary-dark);
+
+            .wp-block-navigation-item__label {
+                text-decoration: underline;
+                text-decoration-color: var(--wp--preset--color--custom-primary-dark);
+                text-underline-offset: 0.5rem;
+            }
+
+            &:hover {
+                color: var(--wp--preset--color--custom-secondary-dark);
+
+                .wp-block-navigation-item__label {
+                    text-decoration-color: var(--wp--preset--color--custom-secondary-dark);
+                }
+            }
+        }
+
+
+        a { 
+            color: var(--wp--preset--color--custom-text-color);
+            transition: all .3s ease-in-out;
+
+
+            &:hover {
+                color: var(--wp--preset--color--custom-primary-dark);
+
+                .wp-block-navigation-item__label {
+                    text-decoration-color: var(--wp--preset--color--custom-primary-dark);
+                }
+            }
+        }
+    }
+}
+
+/* Buttons */
+
+.wp-block-button__link {
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: var(--wp--preset--color--custom-primary-dark);
+        color: var(--wp--preset--color--custom-background);
+    }
+}
