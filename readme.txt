@@ -12,7 +12,10 @@ Figura is designed to be flexible for any website. Figura is a Block Theme with 
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.1 =
+* Release fix
+
+= 1.0 =
 * Initial release
 
 == Copyright ==
